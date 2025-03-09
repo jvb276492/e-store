@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    template: `%s | JB-Store`,
+    template: `%s | Store`,
     default: APP_NAME,
   },
   description: APP_DESCRIPTION,
