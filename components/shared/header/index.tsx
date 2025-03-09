@@ -11,6 +11,7 @@ export default function Header() {
           <Link href="/" className="flex items-center">
             <Image
               src="/images/logo.svg"
+              className="w-auto h-auto"
               alt={`${APP_NAME} logo`}
               height={48}
               width={48}

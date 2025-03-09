@@ -1,7 +1,14 @@
+import sampleData from "@/db/sample-data";
+import ProductList from "@/components/product/product-list";
+
 export default function Home() {
   return (
     <>
-      <h1 className="text-2xl font-bold">Home</h1>
+      <ProductList
+        data={sampleData.products}
+        title="Newest Arivals"
+        limit={4}
+      />
     </>
   );
 }
