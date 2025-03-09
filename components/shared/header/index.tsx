@@ -1,7 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { APP_NAME } from "@/lib/constants";
+<<<<<<< HEAD
 import Menu from "./menu";
+=======
+import { Menu } from "./menu";
+>>>>>>> 5cd71b8477b7fbc6e4fe183f2dfc7b7b55f93bfb
 
 export default function Header() {
   return (
@@ -11,6 +15,7 @@ export default function Header() {
           <Link href="/" className="flex items-center">
             <Image
               src="/images/logo.svg"
+              className="w-auto h-auto"
               alt={`${APP_NAME} logo`}
               height={48}
               width={48}

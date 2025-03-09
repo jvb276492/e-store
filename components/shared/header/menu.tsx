@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "use client";
 import {
   AlignCenter,
@@ -15,6 +16,12 @@ import {
 import { Button } from "@/components/ui/button";
 import ModeToggle from "./mode-toggle";
 import Link from "next/link";
+=======
+import { Button } from "@/components/ui/button";
+import ModeToggle from "./mode-toggle";
+import Link from "next/link";
+import { EllipsisVertical, ShoppingCart, UserIcon } from "lucide-react";
+>>>>>>> 5cd71b8477b7fbc6e4fe183f2dfc7b7b55f93bfb
 import {
   Sheet,
   SheetContent,
@@ -23,7 +30,11 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
+<<<<<<< HEAD
 export default function Menu() {
+=======
+export function Menu() {
+>>>>>>> 5cd71b8477b7fbc6e4fe183f2dfc7b7b55f93bfb
   return (
     <div className="flex justify-end gap-3">
       <nav className="hidden md:flex w-full max-w-xs gap-1">
@@ -42,7 +53,11 @@ export default function Menu() {
       <nav className="md:hidden">
         <Sheet>
           <SheetTrigger className="align-middle">
+<<<<<<< HEAD
             <AlignRight />
+=======
+            <EllipsisVertical />
+>>>>>>> 5cd71b8477b7fbc6e4fe183f2dfc7b7b55f93bfb
           </SheetTrigger>
           <SheetContent className="flex flex-col items-start">
             <SheetTitle>Menu</SheetTitle>
