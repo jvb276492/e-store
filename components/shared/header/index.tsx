@@ -3,11 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { APP_NAME } from "@/lib/constants";
+import ModeToggle from "./mode-toggle";
 
 export default function Header() {
   return (
     <header className="w-full border-b">
-      <div className="wrapper flex justify-between items-center p-2">
+      <div className="wrapper flex justify-between items-center p-4">
         <div className="flex itmes-start">
           <Link href="/" className="flex items-center">
             <Image
@@ -23,12 +24,13 @@ export default function Header() {
           </Link>
         </div>
         <div className="space-x-2">
+          <ModeToggle />
           <Button asChild variant="ghost">
             <Link href="/cart">
               <ShoppingCart /> Cart
             </Link>
           </Button>
-          <Button asChild variant="ghost">
+          <Button asChild>
             <Link href="/sign-in">
               <UserIcon /> Sign In
             </Link>
